@@ -17,6 +17,7 @@ public class TestDetination : MonoBehaviour
 
     private void Update()
     {
+        
         // transform.rotation = new Quaternion(0.682237029f,-0.0112641789f,0.0214082561f,-0.730730832f);
         
     }
