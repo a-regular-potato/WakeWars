@@ -14,6 +14,7 @@ public class DestinationSetter : MonoBehaviour
     private void Start()
     {
         PCam = GameObject.Find("Player").GetComponentInChildren<Camera>();
+        this.agent = GetComponent<NavMeshAgent>();
     }
     private void Update()
     {

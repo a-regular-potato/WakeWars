@@ -12,7 +12,7 @@ public class BasicCamMovement : MonoBehaviour
     public float Speed;
 
     public float MinSpeed = 10f;
-    public float MaxSpeed = 100f;
+    public float MaxSpeed = 250;
 
     private float xRot = 0f;
     private void Update()
@@ -72,14 +72,14 @@ public class BasicCamMovement : MonoBehaviour
         {
             if(Speed < MaxSpeed)
             {
-                Speed += 1f;
+                Speed += 2f;
             }
         }
         if (Input.GetAxis("Mouse ScrollWheel") < 0f)
         {
             if (Speed > MinSpeed)
             {
-                Speed -= 1f;
+                Speed -= 2f;
             }
         }
     }
