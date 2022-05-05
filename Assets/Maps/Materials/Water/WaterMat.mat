@@ -53,6 +53,7 @@ Material:
     - _Shallow_Water: {r: 0.14057496, g: 0.6085736, b: 0.764151, a: 0}
     - _Shallow_Water_Color: {r: 0.5707547, g: 0.9779065, b: 1, a: 0.49411765}
     - _SplashColour: {r: 0.5492168, g: 0.871115, b: 0.9622641, a: 0}
+    - _Tiling: {r: 20, g: 20, b: 0, a: 0}
   m_BuildTextureStacks: []
 --- !u!114 &5621932552931285822
 MonoBehaviour:
