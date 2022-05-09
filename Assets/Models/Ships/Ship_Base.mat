@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Ship_Base
-  m_Shader: {fileID: -6465566751694194690, guid: 109a9b4df186e1643a21f0bfc2cae243, type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: 692b9116654ed7143bdd659a6daabd79, type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords:
   - _NORMALMAP
@@ -103,8 +103,10 @@ Material:
     - _Glossiness: 0
     - _GlossyReflections: 0
     - _Metalicness: 0.5
-    - _Metallic: 1
+    - _Metallic: 0.5
     - _OcclusionStrength: 1
+    - _OutlineIntensity: 100
+    - _OutlineWidth: 0
     - _Parallax: 0.005
     - _QueueControl: 0
     - _QueueOffset: 0
@@ -122,6 +124,7 @@ Material:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _NormalTiling: {r: 10, g: 5, b: 0, a: 0}
+    - _OutlineColour: {r: 0.565886, g: 1, b: 0, a: 0}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
   m_BuildTextureStacks: []
 --- !u!114 &6121727313758691526
