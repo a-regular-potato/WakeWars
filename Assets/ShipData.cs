@@ -5,6 +5,7 @@ using UnityEngine.AI;
 
 public class ShipData : MonoBehaviour
 {
+    public GameObject[] attatchedModules;
     public ShipType ShipType_;
     public enum ShipType
     {
