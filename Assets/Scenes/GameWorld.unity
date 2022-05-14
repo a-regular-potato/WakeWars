@@ -1396,7 +1396,6 @@ GameObject:
   - component: {fileID: 742267632}
   - component: {fileID: 742267631}
   - component: {fileID: 742267630}
-  - component: {fileID: 742267629}
   - component: {fileID: 742267633}
   m_Layer: 5
   m_Name: Canvas
@@ -1427,20 +1426,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &742267629
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 742267627}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e1b24cea67a44794995da0524f1ee958, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moduleInfo: {fileID: 42485785}
-  moduleWindow: {fileID: 1825329587}
 --- !u!114 &742267630
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1511,11 +1496,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 742267627}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e1b24cea67a44794995da0524f1ee958, type: 3}
+  m_Script: {fileID: 11500000, guid: 8f3d7f5a8df5e7542b1bb37459bde36d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moduleInfo: {fileID: 1421346303}
-  moduleWindow: {fileID: 1517659815}
+  toolTips:
+  - name: ModuleToolTip
+    moduleInfo: {fileID: 0}
+    moduleWindow: {fileID: 0}
+    ScaleBackground: 0
+  - name: 
+    moduleInfo: {fileID: 0}
+    moduleWindow: {fileID: 0}
+    ScaleBackground: 0
 --- !u!1 &807205470
 GameObject:
   m_ObjectHideFlags: 0
