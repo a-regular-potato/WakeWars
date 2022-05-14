@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine.AI;
 using UnityEngine;
 
-public class ShipActions : MonoBehaviour
+public class ShipAction : MonoBehaviour
 {
     public bool AllowPlacement;
     private Action action;
@@ -12,6 +12,7 @@ public class ShipActions : MonoBehaviour
         Move,
         Attack,
         Modules,
+        Close,
     }
 
     public GameObject Pointer;
@@ -42,6 +43,16 @@ public class ShipActions : MonoBehaviour
     {
         AllowPlacement = true;
         action = Action.Attack;
+    }
+    public void Close()
+    {
+        foreach(Clickable clickable in clickables)
+        {
+            if (clickable.Selected)
+            {
+                clickable.DeselectAll();
+            }
+        }
     }
     private void Update()
     {

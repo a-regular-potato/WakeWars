@@ -7,6 +7,9 @@ using UnityEngine;
 public class Clickable : MonoBehaviour
 {
     public string Statisitcs;
+    public string ShipData;
+    public ShipData ship;
+
     public Module module;
     public ToolTipManager tipManager;
 
@@ -137,8 +140,10 @@ public class Clickable : MonoBehaviour
     {
         rend.material.SetColor("_OutlineColour", SelectedColour);
         Selected = true;
-        SelectedObj = this;
-        tipManager.ShowUI("ShipInfo", "", Input.mousePosition);
+        SelectedObj = this;             
+        ship = SelectedObj.GetComponent<ShipData>();
+        ShipData = "Name : " + ship.ShipName + "\nType : " + ship.ShipType_;
+        tipManager.ShowUI("ShipInfo", ShipData, Input.mousePosition);
     }
     public void Deselect()
     {
@@ -156,5 +161,6 @@ public class Clickable : MonoBehaviour
             clickable.Selected = false;
             clickable.SelectedObj = null;
         }
+        tipManager.HideUI("ShipInfo");
     }
 }
