@@ -6,6 +6,8 @@ public class WeaponModule : Module
 {
     public Weapon WeaponData;
 
+    public ParticleSystem MuzzleFlash;
+
     [System.Serializable]
     public class Weapon 
     {

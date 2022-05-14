@@ -1,0 +1,150 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4062533118892626766
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3686993391363197428}
+  - component: {fileID: 325683458202764881}
+  - component: {fileID: 2549591718399144603}
+  - component: {fileID: 2549591718399144600}
+  - component: {fileID: 2549591718399144601}
+  - component: {fileID: 2549591718399144679}
+  m_Layer: 0
+  m_Name: CrateModule
+  m_TagString: Module
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3686993391363197428
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4062533118892626766}
+  m_LocalRotation: {x: -0.31154835, y: -0.63477373, z: -0.6347737, w: 0.31154838}
+  m_LocalPosition: {x: 0.42708626, y: 1.2371427, z: -5.137469}
+  m_LocalScale: {x: 36.555065, y: 36.555065, z: 36.555065}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &325683458202764881
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4062533118892626766}
+  m_Mesh: {fileID: 5312113259008031957, guid: 3f669265efb1b3f4c98424141611235b, type: 3}
+--- !u!23 &2549591718399144603
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4062533118892626766}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: c7e68ceb47719b34da6a2bcb5e9e47ae, type: 2}
+  - {fileID: 2100000, guid: c7e68ceb47719b34da6a2bcb5e9e47ae, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &2549591718399144600
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4062533118892626766}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.06232138, y: 0.06580719, z: 0.050995275}
+  m_Center: {x: 0.01419814, y: -0.008690244, z: -0.014425091}
+--- !u!114 &2549591718399144601
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4062533118892626766}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 143e127633a23b2469917d55d8f1fc10, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Statisitcs: 
+  ShipData: 
+  ship: {fileID: 0}
+  module: {fileID: 0}
+  tipManager: {fileID: 0}
+  Selected: 0
+  SelectedObj: {fileID: 0}
+  SelectedColour: {r: 0.26138735, g: 1, b: 0, a: 0}
+  DeSelectedColour: {r: 0, g: 0.9715028, b: 1, a: 0}
+--- !u!114 &2549591718399144679
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4062533118892626766}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1a6629db9f317643b992567f7b3f64e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rends:
+  - {fileID: 2549591718399144603}
+  SelectedColour: {r: 0, g: 1, b: 0.8384063, a: 0}
+  UnSelectedColour: {r: 0, g: 1, b: 1, a: 0}
+  ModuleData:
+    ModuleClass: 1
+    Class: 0
+    UpgradeState: 0
+    MaxUpgradeAmount: 3
+    CurrentHealth: 100
+    MaxHealth: 100
+    Status: 0
+  StorageData:
+    StorageLeft: 10
+    StorageCapcity: 10

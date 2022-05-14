@@ -5,7 +5,8 @@ using UnityEngine.AI;
 
 public class ShipData : MonoBehaviour
 {
-    public GameObject[] attatchedModules;
+    public Module[] attatchedModules;
+
     public string ShipName;
 
     private string[] Title = {"ISS", "USS", "LR", "HMS", "CSS"};
