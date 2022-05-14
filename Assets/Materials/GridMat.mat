@@ -23,7 +23,8 @@ Material:
   m_Name: GridMat
   m_Shader: {fileID: -6465566751694194690, guid: d1da956db043858488dc9957a0aff279, type: 3}
   m_ValidKeywords: []
-  m_InvalidKeywords: []
+  m_InvalidKeywords:
+  - _TILESTATUS_NONE
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -122,14 +123,20 @@ Material:
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _Surface: 0
+    - _TILESTATUS: 0
+    - _TileStatus: 0
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
     - _ActiveColour: {r: 0.19518597, g: 0.6981132, b: 0, a: 0}
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
-    - _BaseColour: {r: 0, g: 0.42602107, b: 0.6981132, a: 0}
+    - _BaseColour: {r: 0, g: 0.426021, b: 0.6981132, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _Highlight: {r: 0.6981132, g: 0.684489, b: 0.023050921, a: 1}
     - _HighlightColour: {r: 0.7688679, g: 1, b: 0.9627017, a: 0}
+    - _Invalid: {r: 0.8490566, g: 0, b: 0.026287267, a: 0}
+    - _MouseOver: {r: 0.8160377, g: 1, b: 0.98644847, a: 1}
+    - _Selection: {r: 0, g: 0.6886792, b: 0.17876804, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
   m_BuildTextureStacks: []

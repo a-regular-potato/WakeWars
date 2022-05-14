@@ -10,17 +10,18 @@ public class GameManager : MonoBehaviour
         Completed
     }
 
-    public enum TurnState
-    {
-        Waiting,
-        Executing,
-        Complete
-    };
+   
+
+    public List<Player> players;
     
     
     // Start is called before the first frame update
     void Start()
     {
-        
+        foreach (Player player in players)
+        {
+            player.StepState();
+        }
     }
+    
 }
