@@ -33,7 +33,7 @@ public class GridNavigator : MonoBehaviour
         }
     }
 
-    public void SetDestination(Vector3 destination)
+    public void HighlightPath(Vector3 destination)
     {
         NavMeshPath path = new NavMeshPath();
         _agent.isStopped = true;
@@ -41,6 +41,20 @@ public class GridNavigator : MonoBehaviour
         bool success = _agent.CalculatePath(destination, path);
         if (!success)
             throw new ArgumentOutOfRangeException(nameof(destination), "could not be found. is it even on the grid!?");
+        
+        foreach (var coord in path.corners)
+        {
+            Vector2Int gridSpaceCoord = _gm.Unproject(coord);
+            // _gridNavPath.Enqueue(gridSpaceCoord);
+            Debug.Log($"navmesh corner translated - from {coord} to {gridSpaceCoord} on grid");
+        }
+    }
+
+    /*public void SetDestination(Vector3 destination)
+    {
+       
+        
+        
 
         
         Vector3[] origCoords = path.corners;
@@ -56,5 +70,5 @@ public class GridNavigator : MonoBehaviour
         if (_gridNavPath.Count > 0)
             _agent.SetDestination(_gridNavPath.Dequeue());
         _agent.isStopped = false;
-    }
+    }*/
 }

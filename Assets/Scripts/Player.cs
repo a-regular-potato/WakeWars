@@ -46,7 +46,7 @@ public class Player : MonoBehaviour
             
         if (manager != null)
             // manager.onGridSelect += TriggerPlayerAttack;
-            manager.onGridSelect += TriggerPlayerMove;
+            manager.OnGridSelect += TriggerPlayerMove;
         
         _notifyManager.Enqueue("It's Player 1's turn");
     }
@@ -57,9 +57,9 @@ public class Player : MonoBehaviour
         
     }
 
-    void TriggerPlayerMove(Vector3 coords)
+    void TriggerPlayerMove(Vector3 worldCoords, Vector2Int gridCoords)
     {
-        this.fleet[0].SetDestination(coords);
+        this.fleet[0].SetDestination(worldCoords);
     }
 
     void TriggerPlayerAttack(Vector3 coords)

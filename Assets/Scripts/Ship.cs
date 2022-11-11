@@ -32,7 +32,8 @@ public class Ship : MonoBehaviour
 
     public void SetDestination(Vector3 coords)
     {
-        _navigator.SetDestination(coords);
+        _navigator.HighlightPath(coords);
+        // _navigator.SetDestination(coords);
     }
 
     // IEnumerator SnapDestination(Vector3 coords)
